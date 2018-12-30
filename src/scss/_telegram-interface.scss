@@ -1,0 +1,14 @@
+.telegram-interface {
+    display: flex;
+    position: relative;
+  
+    &__chat-list {
+      width: 35%;
+    }
+  
+    &__chat-view {
+      width: 65%;
+      height: 100%;
+      min-width: 0;
+    }
+  }

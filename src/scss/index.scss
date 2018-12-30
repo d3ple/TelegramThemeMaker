@@ -1,0 +1,98 @@
+@import "normalize";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+$siteBg: #fd739c;
+
+header {
+  background-color: $siteBg;
+  position: relative;
+  z-index: 2;
+
+  .app-title {
+    padding: 35px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+    color: #ffffff;
+  }
+
+  .app-version {
+    background: #ffffff;
+    color: $siteBg;
+    font-size: 0.5em;
+    padding: 0 5px;
+    border-radius: 10px;
+    margin-left: -6px;
+  }
+}
+
+.app-section {
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
+  padding-bottom: 80px; 
+  background-color: $siteBg;
+}
+
+
+
+
+.pickersRow {
+  padding: 30px 150px;
+  background: #ffffff;
+
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.textFieldRow {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.pickerBox {
+  width: 250px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 2px 2px;
+  
+  background: #f1f1f1;
+}
+
+
+@import "color-palette";
+@import "desktop-app-container";
+@import "system-title-bar";
+@import "telegram-interface";
+@import "main-menu";
+@import "chat-list";
+@import "chat-list-item";
+@import "chat-view";
+@import "chat-view-header";
+@import "chat-view-body";
+@import "chat-msg";
+@import "sticker-msg";
+@import "chat-view-footer";

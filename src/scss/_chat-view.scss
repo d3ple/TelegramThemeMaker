@@ -1,0 +1,40 @@
+.chat-view {
+  &__start_overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 684px;
+    background-image: url(https://i.imgur.com/8WOXpqm.png); 
+
+    &--hidden {
+      display: none;
+    }
+  }
+
+  &__start_overlay_msg {
+    padding: 5px 15px;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: 600;
+    background: grey;
+    color: #ffffff;
+  }
+
+  &__header {
+    height: 54px;
+    width: 100%;
+  }
+
+  &__body {
+    height: 584px;
+    width: 100%;
+    padding-top: 10px;
+  }
+
+  &__footer {
+    height: 46px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

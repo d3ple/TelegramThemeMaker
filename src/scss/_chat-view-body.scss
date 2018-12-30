@@ -1,0 +1,193 @@
+.chat-view-body {
+  overflow-y: scroll;
+  background-image: url(https://i.imgur.com/8WOXpqm.png); 
+
+  &--hidden {
+    display: none;
+  }
+
+  &__chat {
+    display: none;
+
+    &--selected {
+      display: block;
+    }
+  }
+
+  &__pinned-msg-row {
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    border-bottom: 1px $shadowFg solid;
+    padding: 8px 10px;
+    background: white;
+  }
+
+  &__pinned-msg {
+    padding-left: 10px;
+    border-left: 2px blue solid;
+  }
+
+  &__pinned-msg-title {
+    margin-bottom: 3px;
+    font-weight: 600;
+    color: #0083d1;
+  }
+
+  &__group-userpic {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    align-self: flex-end;
+    margin-left: 13px;
+    margin-right: -10px;
+    background-color: #0083d1;
+    background-size: contain;
+    background-position: center center;
+
+    &--pic1 {
+      background-image: url(https://i.imgur.com/4AiXzf8.jpg);
+    }
+
+    &--pic2 {
+      background-image: url(https://i.imgur.com/gtWsPu9.jpg);
+    }
+
+    &--pic3 {
+      background-image: url(https://i.imgur.com/sFq0wAC.jpg);
+    }
+  }
+
+  &__msg-row {
+    display: flex;
+    margin-bottom: 5px;
+    position: relative;
+
+    &--in {
+      justify-content: flex-start;
+    }
+
+    &--out {
+      justify-content: flex-end;
+    }
+
+    &--date {
+      justify-content: center;
+    }
+  }
+
+  &__date {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-weight: 600;
+    background: #b3b3b3;
+    color: #fff;
+  }
+
+  &__msg {
+    max-width: 70%;
+    min-width: 80px;
+    padding: 10px 12px 5px;
+  }
+
+  &__msg-row--in .chat-msg__pointer {
+    left: -9px;
+    border-bottom: 13px solid $msgInBg;
+    border-left: 13px solid transparent;
+  }
+
+  &__msg-row--out .chat-msg__pointer {
+    right: -9px;
+    border-bottom: 13px solid $msgOutBg;
+    border-right: 13px solid transparent;
+  }
+
+  &__sticker {
+    max-width: 40%;
+  }
+
+  &__img-msg {
+    max-width: 100%;
+  }
+
+  &__msg-row--in &__msg {
+    margin-left: 20px;
+    background-color: $msgInBg;
+    color: $historyTextInFg;
+
+    .chat-msg__voice-msg-visual-part {
+      background: $msgWaveformInInactive;
+    }
+
+    .chat-msg__forwarded {
+      color: $msgInServiceFg;
+    }
+
+    .chat-msg__reply-name {
+      color: $msgInServiceFg;
+    }
+
+    .chat-msg__date {
+      color: $msgInDateFg;
+    }
+
+    .chat-msg__reply-wrapper {
+      border-color: $msgInReplyBarColor;
+    }
+
+    .chat-msg__link {
+      color: $historyLinkInFg;
+    }
+
+    .chat-msg__audio-file-name {
+      color: $historyFileNameInFg;
+    }
+
+    .chat-msg__audio-file-play-btn, .chat-msg__voice-msg-play-btn {
+      background: $msgFileInBg;
+    }
+  }
+
+  &__msg-row--out &__msg {
+    margin-right: 20px;
+    background: $msgOutBg;
+    color: $historyTextOutFg;
+
+    .chat-msg__voice-msg-visual-part {
+      background: $msgWaveformOutInactive;
+    }
+
+    .chat-msg__forwarded {
+      color: $msgOutServiceFg;
+    }
+
+    .chat-msg__reply-name {
+      color: $msgOutServiceFg;
+    }
+
+    .chat-msg__date {
+      color: $msgOutDateFg;
+    }
+
+    .chat-msg__reply-wrapper {
+      border-color: $msgOutReplyBarColor;
+    }
+
+    .chat-msg__link {
+      color: $historyLinkOutFg;
+    }
+
+    .chat-msg__audio-file-name {
+      color: $historyFileNameOutFg;
+    }
+
+    .chat-msg__status {
+      color: $historyOutIconFg;
+    }
+
+    .chat-msg__audio-file-play-btn, .chat-msg__voice-msg-play-btn {
+      background: $msgFileOutBg;
+    }
+  }
+
+}

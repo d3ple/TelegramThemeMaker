@@ -1,0 +1,34 @@
+.chat-list {
+  border-right: 1px $shadowFg solid;
+  background-color: $dialogsBg;
+
+  &__header {
+    display: flex;
+    height: 54px;
+  }
+
+  &__main-menu-btn {
+    width: 30px;
+    height: 30px;
+    margin: auto 0 auto 15px;
+    font-size: 1.3em;
+    cursor: pointer;
+  }
+
+  &__searchbox {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 32px;
+    padding-left: 15px;
+    margin: auto 15px;
+    border-radius: 3px;
+    cursor: default;
+    background: $searchedBarBg;
+    color: $searchedBarFg;
+  }
+
+  &__item {
+    height: 63px;
+  }
+}

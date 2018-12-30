@@ -1,0 +1,33 @@
+{
+  "name": "telegram_theme_maker",
+  "description": "",
+  "author": "d3ple",
+  "version": "0.1.0",
+  "scripts": {
+    "start:prod": "node index.js",
+    "start:dev": "set DEBUG=sockets & node index.js",
+    "start": "npm run start:dev",
+    "postinstall": "node ./node_modules/gulp/bin/gulp build"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "babel-loader": "^8.0.2",
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-livereload": "^4.0.0",
+    "gulp-minify": "^3.1.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-sass": "^4.0.1",
+    "webpack-stream": "^5.1.1"
+  },
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 1.0"
+  },
+  "license": "MIT"
+}

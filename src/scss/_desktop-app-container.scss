@@ -1,0 +1,92 @@
+.desktop-app-container {
+    min-width: 711px;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 3px;
+    background-color: $windowBg;
+    color: $windowFg;
+  
+    @media screen and (min-width: 1900px) {
+          width: 1070px;
+    }
+    
+    @media screen and (max-width: 1900px) {
+          width: 66%;
+    }
+    
+    @media screen and (max-width: 1544px) {
+          width: 70%;
+    }
+    
+    @media screen and (max-width: 1302px) {
+          width: 76%;
+    }
+    
+    @media screen and (max-width: 1157px) {
+          width: 80%;
+    }
+    
+    @media screen and (max-width: 999px) {
+          width: 86%;
+    }
+    
+    @media screen and (max-width: 860px) {
+          width: 90%;
+    }
+    
+    @media screen and (max-width: 768px) {
+          width: 96%;
+    }
+
+    &__system-title-bar {
+      height: 20px;
+      position: relative;
+      z-index: 2;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 4;
+      top: 0;
+      left: -275px;
+      width: 275px;
+      height: 100%;
+      background-color: $siteBg;
+    }
+
+
+    ::-webkit-scrollbar {
+      width: 7px;
+    }
+  
+    ::-webkit-scrollbar-track {
+      border-radius: 10px;
+    }
+  
+    ::-webkit-scrollbar-track:hover {
+      background: rgba(0, 0, 0, 0.1);
+    }
+  
+    ::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+    }
+  
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgb(187, 187, 187);
+    }
+
+    .btn-reset-style {
+      background: none;
+      border: none;
+      padding: 0;
+    }
+    
+    .icon-btn {
+      color: $menuIconFg;
+  
+      &:hover {
+        color: $menuIconFgOver;
+      }
+    }
+  }

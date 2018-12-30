@@ -1,0 +1,235 @@
+.chat-list-item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  line-height: 1.2em;
+
+  &__userpic-wrapper {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  &__userpic {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgb(235, 134, 134);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    &--pic-1 {
+      background-image: url(https://vignette.wikia.nocookie.net/dimitris-random/images/a/ae/TommyVercetti-GTAVC.jpg/revision/latest/scale-to-width-down/300?cb=20160217042457);
+    }
+
+    &--pic-2 {
+      background-image: url(https://b.thumbs.redditmedia.com/65GJujMgAXbydbxxFPYm6eck1YffqR-anhX4-hxnVhQ.png);
+    }
+
+    &--pic-3 {
+      background-image: url(https://i.imgur.com/X1PQMgv.jpg);
+    }
+
+    &--pic-4 {
+      background-image: url(https://i.imgur.com/JNBmf.jpg);
+    }
+
+    &--pic-5 {
+      background-image: url(https://i.imgur.com/KGmkJf7.jpg);
+    }
+
+    &--pic-6 {
+      background-image: url(https://i.imgur.com/GRLVtX5.jpg);
+    }
+
+    &--pic-7 {
+      background-image: url(https://c1.staticflickr.com/8/7047/8688093059_544b4256f2_z.jpg);
+    }
+
+    &--pic-8 {
+      background-image: url(https://i.imgur.com/EO8eEZQ.jpg);
+    }
+
+    &--pic-9 {
+      background-image: url(https://i.imgur.com/0GdE9XK.jpg);
+    }
+
+    &--pic-10 {
+      background-image: url(https://i.imgur.com/m4scIXX.jpg);
+    }
+  }
+
+  &__text-wrapper {
+    width: 100%;
+    min-width: 0;
+    margin-right: 10px;
+  }
+
+  &__header,
+  &__footer {
+    display: flex;
+    align-items: center;
+  }
+
+  &__header {
+    margin-bottom: 8px;
+  }
+
+  &__author {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 600;
+    color: $dialogsNameFg;
+
+    .icon {
+      color: $dialogsChatIconFg;
+    }
+  }
+
+  &__delivery-status {
+    margin-left: 5px;
+    margin-right: 3px;
+    text-align: right;
+
+    .icon {
+      color: $dialogsSentIconFg;
+    }
+  }
+
+  &__delivery-date {
+    text-align: right;
+    color: $dialogsDateFg;
+  }
+
+  &__last-msg {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: $dialogsTextFg;
+  }
+
+  &__last-msg-type {
+    display: inline;
+    color: $dialogsTextFgService;
+  }
+
+  &__notifications-wrapper {
+    margin-left: 10px;
+  }
+
+  &__notification-counter {
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 1.5em;
+    border-radius: 50%;
+    font-size: 0.9em;
+    font-weight: 600;
+    text-align: center;
+    color: $dialogsUnreadFg;
+
+    &--unmuted {
+      background: $dialogsUnreadBg;
+    }
+
+    &--muted {
+      background: $dialogsUnreadBgMuted;
+    }
+  }
+
+  &:not(&--selected):hover {
+    background-image: radial-gradient(circle, transparent 1%, $dialogsBgOver 1%);
+    background-color: $dialogsRippleBg;
+    background-position: center;
+    background-size: 10%;
+    color: $dialogsNameFgOver;
+
+    .chat-list-item__delivery-date {
+      color: $dialogsDateFgOver;
+    }
+
+    .chat-list-item__last-msg {
+      color: $dialogsTextFgOver;
+    }
+
+    .chat-list-item__last-msg-type {
+      color: $dialogsTextFgServiceOver;
+    }
+
+    .chat-list-item__delivery-status {
+      color: $dialogsSentIconFgOver;
+    }
+
+    .chat-list-item__notification-counter--unmuted {
+      background: $dialogsUnreadBgOver;
+    }
+
+    .chat-list-item__notification-counter--muted {
+      background: $dialogsUnreadBgMutedOver;
+    }
+
+    .chat-list-item__notification-counter {
+      color: $dialogsUnreadFgOver;
+    }
+
+    &:active {
+      background-color: $dialogsRippleBg; 
+      background-size: 15000%;
+      transition: background 0.6s;
+    }
+  }
+
+
+
+  &--selected {
+    background-image: radial-gradient(circle, transparent 1%, $dialogsBgActive 1%);
+    background-color: $dialogsRippleBgActive;
+    background-position: center;
+    background-size: 10%;
+    // background: $dialogsBgActive;
+
+    .chat-list-item__author {
+      color: $dialogsNameFgActive;
+      }
+
+    .icon {
+      color: $dialogsChatIconFgActive;
+    }
+
+    .chat-list-item__delivery-date {
+      color: $dialogsDateFgActive;
+    }
+
+    .chat-list-item__last-msg {
+      color: $dialogsTextFgActive;
+    }
+
+    .chat-list-item__notification-counter--unmuted {
+      background: $dialogsUnreadBgActive;
+      color: $dialogsUnreadFgActive;
+    }
+
+    .chat-list-item__notification-counter--muted {
+      background: $dialogsUnreadBgMutedActive;
+      color: $dialogsUnreadFgActive;
+    }
+
+    .chat-list-item__last-msg-type {
+      color: $dialogsTextFgServiceActive;
+    }
+
+    .chat-list-item__delivery-status {
+      color: $dialogsSentIconFgActive;
+    }
+    
+    &:active {
+      background-color: $dialogsRippleBgActive; 
+      background-size: 15000%;
+      transition: background 0.6s;
+    }
+
+  }
+
+}

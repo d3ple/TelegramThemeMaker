@@ -1,0 +1,40 @@
+.chat-view-footer {
+    border-top: 1px $shadowFg solid;
+    cursor: default;
+  
+    &--hidden {
+      display: none;
+    }
+  
+    &__inner {
+      display: flex;
+      height: 100%;
+      align-items: center;
+  
+      &--hidden {
+        display: none;
+      }
+    }
+  
+    &__mute-btn {
+      width: 100%;
+      text-align: center;
+      font-weight: 600;
+      color: #0083d1;
+    }
+  
+    &__new-msg {
+      width: 100%;
+      color: #898993;
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+  
+    &__btn {
+      font-size: 1.6em;
+    }
+  
+    &__btn--emoji {
+      margin-right: 15px;
+    }
+  }

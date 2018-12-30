@@ -1,0 +1,85 @@
+.chat-view-header {
+  border-bottom: 1px $shadowFg solid;
+  background-color: $topBarBg;
+  padding-top: 10px;
+
+  &--hidden {
+    display: none;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    transition: 0.3s ease;
+
+    &--selected-msg {
+      margin-top: -48px;
+      margin-bottom: 13px;
+    }
+  }
+
+  &__chat-info-wrapper {
+    width: 90%;
+    margin-left: 15px;
+  }
+
+  &__chat-name {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: $windowBoldFg;
+  }
+
+  &__chat-status {
+    color: $windowSubTextFg;
+
+    &--online {
+      color: $windowActiveTextFg;
+    }
+  }
+
+  &__btns-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 15px;
+  }
+
+  &__btn {
+    font-size: 1.2em;
+  }
+
+  &__btn--search {
+    margin-right: 20px;
+    margin-left: 18px;
+  }
+
+  &__selected-msg-control-btns {
+    display: flex;
+  }
+
+  &__selected-msg-cancel-btn {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__selected-msg-btn {
+    height: 35px;
+    border: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    padding: 0 20px;
+    font-weight: 600;
+
+    &--forward, &--delete {
+      background-color: #0083d1;
+      color: white;
+    }
+
+    &--cancel {
+      background: none;
+      color: #0083d1;
+    }
+  }
+  
+}
