@@ -1,8 +1,10 @@
+const appSection = document.getElementsByClassName('app-section')[0];
+
 function showChat() {
-   document.getElementsByClassName('chat-view-header')[0].classList.remove("chat-view-header--hidden");
-   document.getElementsByClassName('chat-view-body')[0].classList.remove("chat-view-body--hidden");
-   document.getElementsByClassName('chat-view-footer')[0].classList.remove("chat-view-footer--hidden");
-   document.getElementsByClassName('chat-view__start_overlay')[0].classList.add("chat-view__start_overlay--hidden");
+   appSection.getElementsByClassName('chat-view-header')[0].classList.remove("chat-view-header--hidden");
+   appSection.getElementsByClassName('chat-view-body')[0].classList.remove("chat-view-body--hidden");
+   appSection.getElementsByClassName('chat-view-footer')[0].classList.remove("chat-view-footer--hidden");
+   appSection.getElementsByClassName('chat-view__start_overlay')[0].classList.add("chat-view__start_overlay--hidden");
 }
 
 function isSelectedConversationExist(item) {
@@ -24,12 +26,12 @@ function chooseChatFooter(item) {
 
 function setChatName(thisConversation) {
    const thisConversationName = thisConversation.getElementsByClassName("chat-list-item__author")[0];
-   const chatConversationName = document.getElementsByClassName("chat-view-header__chat-name")[0];
+   const chatConversationName = appSection.getElementsByClassName("chat-view-header__chat-name")[0];
    chatConversationName.textContent = thisConversationName.textContent;
 }
 
 function selectConversation() {
-   const selectedConversation = document.getElementsByClassName('chat-list-item--selected')[0];
+   const selectedConversation = appSection.getElementsByClassName('chat-list-item--selected')[0];
 
    if (!isSelectedConversationExist(selectedConversation)) {
       showChat();
@@ -50,7 +52,7 @@ function selectConversation() {
 }
 
 
-const conversationsItems = document.getElementsByClassName('chat-list-item');
+const conversationsItems = appSection.getElementsByClassName('chat-list-item');
 for (let item of conversationsItems) {
    item.addEventListener('click', selectConversation);
 }

@@ -3,6 +3,7 @@
   align-items: center;
   cursor: pointer;
   line-height: 1.2em;
+  background-color: $dialogsBg;
 
   &__userpic-wrapper {
     margin-left: 10px;
@@ -95,6 +96,7 @@
 
     .icon {
       color: $dialogsSentIconFg;
+      //сделать нормальный класс
     }
   }
 
@@ -139,8 +141,8 @@
     }
   }
 
-  &:not(&--selected):hover {
-    background-image: radial-gradient(circle, transparent 1%, $dialogsBgOver 1%);
+  &:not(&--selected):hover { //сделать
+    background-image: radial-gradient(circle, transparent 1%, $dialogsBgOver 1%); 
     background-color: $dialogsRippleBg;
     background-position: center;
     background-size: 10%;
@@ -184,11 +186,10 @@
 
 
   &--selected {
-    background-image: radial-gradient(circle, transparent 1%, $dialogsBgActive 1%);
+    background-image: radial-gradient(circle, transparent 1%, $dialogsBgActive 1%); //сделать
     background-color: $dialogsRippleBgActive;
     background-position: center;
     background-size: 10%;
-    // background: $dialogsBgActive;
 
     .chat-list-item__author {
       color: $dialogsNameFgActive;
@@ -206,14 +207,16 @@
       color: $dialogsTextFgActive;
     }
 
-    .chat-list-item__notification-counter--unmuted {
-      background: $dialogsUnreadBgActive;
+    .chat-list-item__notification-counter {
       color: $dialogsUnreadFgActive;
-    }
 
-    .chat-list-item__notification-counter--muted {
-      background: $dialogsUnreadBgMutedActive;
-      color: $dialogsUnreadFgActive;
+      &--unmuted {
+        background: $dialogsUnreadBgActive;
+      }
+  
+      &--muted {
+        background: $dialogsUnreadBgMutedActive;
+      }
     }
 
     .chat-list-item__last-msg-type {

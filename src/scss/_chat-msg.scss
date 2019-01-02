@@ -1,4 +1,5 @@
 .chat-msg {
+    padding: 10px 12px 5px;
     border-radius: 5px;
     position: relative;
     line-height: 1.35em;
@@ -33,12 +34,12 @@
           border-bottom: 13px solid rgba(110, 159, 231, 0.507);
         }
   
-        .chat-view-body__msg-row--in &::before {
+        .chat-msg--in &::before {
           left: -13px;
           border-left: 13px solid transparent;
         }
       
-        .chat-view-body__msg-row--out &::before {
+        .chat-msg--out &::before {
           right: -13px;
           border-right: 13px solid transparent;
         }
@@ -190,6 +191,103 @@
   
     &__link-msg-content {
       margin-top: 5px;
+    }
+
+
+
+    &--in .chat-msg__pointer {
+      left: -9px;
+      border-bottom: 13px solid $msgInBg;
+      border-left: 13px solid transparent;
+    }
+  
+    &--out .chat-msg__pointer {
+      right: -9px;
+      border-bottom: 13px solid $msgOutBg;
+      border-right: 13px solid transparent;
+    }
+
+
+
+
+    &--in {
+      margin-left: 20px;
+      background-color: $msgInBg;
+      color: $historyTextInFg;
+  
+      .chat-msg__voice-msg-visual-part {
+        background: $msgWaveformInInactive;
+      }
+  
+      .chat-msg__forwarded {
+        color: $msgInServiceFg;
+      }
+  
+      .chat-msg__reply-name {
+        color: $msgInServiceFg;
+      }
+  
+      .chat-msg__date {
+        color: $msgInDateFg;
+      }
+  
+      .chat-msg__reply-wrapper {
+        border-color: $msgInReplyBarColor;
+      }
+  
+      .chat-msg__link {
+        color: $historyLinkInFg;
+      }
+  
+      .chat-msg__audio-file-name {
+        color: $historyFileNameInFg;
+      }
+  
+      .chat-msg__audio-file-play-btn, .chat-msg__voice-msg-play-btn {
+        background: $msgFileInBg;
+      }
+    }
+  
+    &--out {
+      margin-right: 20px;
+      background: $msgOutBg;
+      color: $historyTextOutFg;
+  
+      .chat-msg__voice-msg-visual-part {
+        background: $msgWaveformOutInactive;
+      }
+  
+      .chat-msg__forwarded {
+        color: $msgOutServiceFg;
+      }
+  
+      .chat-msg__reply-name {
+        color: $msgOutServiceFg;
+      }
+  
+      .chat-msg__date {
+        color: $msgOutDateFg;
+      }
+  
+      .chat-msg__reply-wrapper {
+        border-color: $msgOutReplyBarColor;
+      }
+  
+      .chat-msg__link {
+        color: $historyLinkOutFg;
+      }
+  
+      .chat-msg__audio-file-name {
+        color: $historyFileNameOutFg;
+      }
+  
+      .chat-msg__status {
+        color: $historyOutIconFg;
+      }
+  
+      .chat-msg__audio-file-play-btn, .chat-msg__voice-msg-play-btn {
+        background: $msgFileOutBg;
+      }
     }
 
   }
