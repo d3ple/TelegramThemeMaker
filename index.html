@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <title>Telegram Theme Maker</title>
     <link rel="stylesheet" href="build/css/index.css" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Noto+Sans" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0"
         crossorigin="anonymous"></script>
 </head>
@@ -2360,9 +2360,9 @@
     </section>
 
     <section class="selection-section">
-        <div class="selection-box">
-            <div class="selection-box__part">
-                <p class="selection-box__part-name">
+        <div class="selection-row">
+            <div class="selection-box">
+                <p class="selection-box__title">
                     Operation System
                 </p>
                 <div class="selection-box__selector-box">
@@ -2378,8 +2378,8 @@
                     </div>
                 </div>
             </div>
-            <div class="selection-box__part">
-                <p class="selection-box__part-name">
+            <div class="selection-box">
+                <p class="selection-box__title">
                     Background image
                 </p>
                 <div class="selection-box__selector-box">
@@ -2393,39 +2393,41 @@
             </div>
         </div>
 
-        <div class="selection-box">
-            <div class="selection-box__part">
-                <p class="selection-box__part-name">
+        <div class="selection-row">
+            <div class="selection-box">
+                <p class="selection-box__title">
                     Chat list item
                 </p>
                 <div class="selection-box__item-area">
-                    <div class="chat-list__item chat-list-item">
-                        <div class="chat-list-item__userpic-wrapper">
-                            <div class="chat-list-item__userpic chat-list-item__userpic--pic-2"></div>
-                        </div>
-                        <div class="chat-list-item__text-wrapper">
-                            <div class="chat-list-item__header">
-                                <div class="chat-list-item__author">
-                                    <i class="fas fa-bullhorn icon"></i>
-                                    r/oddlysatisfying
-                                </div>
-                                <div class="chat-list-item__delivery-status">
-
-                                </div>
-                                <div class="chat-list-item__delivery-date">
-                                    19:45
-                                </div>
+                    <div class="selection-box__chat-list-item">
+                        <div class="chat-list__item chat-list-item">
+                            <div class="chat-list-item__userpic-wrapper">
+                                <div class="chat-list-item__userpic chat-list-item__userpic--pic-2"></div>
                             </div>
-                            <div class="chat-list-item__footer">
-                                <div class="chat-list-item__last-msg">
-                                    <div class="chat-list-item__last-msg-type">
-                                        Photo,
+                            <div class="chat-list-item__text-wrapper">
+                                <div class="chat-list-item__header">
+                                    <div class="chat-list-item__author">
+                                        <i class="fas fa-bullhorn icon"></i>
+                                        r/oddlysatisfying
                                     </div>
-                                    The way the sun shines on the picture.
+                                    <div class="chat-list-item__delivery-status">
+
+                                    </div>
+                                    <div class="chat-list-item__delivery-date">
+                                        19:45
+                                    </div>
                                 </div>
-                                <div class="chat-list-item__notifications-wrapper">
-                                    <div class="chat-list-item__notification-counter chat-list-item__notification-counter--muted">
-                                        4
+                                <div class="chat-list-item__footer">
+                                    <div class="chat-list-item__last-msg">
+                                        <div class="chat-list-item__last-msg-type">
+                                            Photo,
+                                        </div>
+                                        The way the sun shines on the picture.
+                                    </div>
+                                    <div class="chat-list-item__notifications-wrapper">
+                                        <div class="chat-list-item__notification-counter chat-list-item__notification-counter--muted">
+                                            4
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -2433,177 +2435,177 @@
                     </div>
                 </div>
                 <div class="selection-box__pickers-area">
-                    <div class="selection-box__column">
+                    <div class="selection-box__pickers-column">
                         <div class="selection-box__color-picker-wrapper">
                             <label>
-                                Background:
                                 <input class="picker-item" type="color" id="$dialogsBg">
+                                Background:
                             </label>
                         </div>
                         <div class="selection-box__color-picker-wrapper">
                             <label>
-                                Sender name font color:
                                 <input class="picker-item" type="color" id="$dialogsNameFg">
+                                Sender name font color:
                             </label>
                         </div>
                         <div class="selection-box__color-picker-wrapper">
                             <label>
-                                dialogsChatIconFg:
                                 <input class="picker-item" type="color" id="$dialogsChatIconFg">
+                                dialogsChatIconFg:
                             </label>
                         </div>
                         <div class="selection-box__color-picker-wrapper">
                             <label>
-                                dialogsSentIconFg:
                                 <input class="picker-item" type="color" id="$dialogsSentIconFg">
+                                dialogsSentIconFg:
                             </label>
                         </div>
                         <div class="selection-box__color-picker-wrapper">
                             <label>
-                                Date font color:
                                 <input class="picker-item" type="color" id="$dialogsDateFg">
+                                Date font color:
                             </label>
                         </div>
                         <div class="selection-box__color-picker-wrapper">
                             <label>
-                                Last message font color:
                                 <input class="picker-item" type="color" id="$dialogsTextFg">
+                                Last message font color:
                             </label>
                         </div>
                     </div>
-                    <div class="selection-box__column">
+                    <div class="selection-box__pickers-column">
                         <div class="selection-box__color-picker-wrapper">
                             <label>
-                                Last message service word's font color (e.g "You" or "GIF"):
                                 <input class="picker-item" type="color" id="$dialogsTextFgService">
+                                Last message service word's font color (e.g "You" or "GIF"):
                             </label>
                         </div>
                         <div class="selection-box__color-picker-wrapper">
                             <label>
-                                Unread messages counter font color:
                                 <input class="picker-item" type="color" id="$dialogsUnreadFg">
+                                Unread messages counter font color:
                             </label>
                         </div>
                         <div class="selection-box__color-picker-wrapper">
                             <label>
-                                Unread messages counter background:
                                 <input class="picker-item" type="color" id="$dialogsUnreadBg">
+                                Unread messages counter background:
                             </label>
                         </div>
                         <div class="selection-box__color-picker-wrapper">
                             <label>
-                                Unread messages counter background for muted:
                                 <input class="picker-item" type="color" id="$dialogsUnreadBgMuted">
+                                Unread messages counter background for muted:
                             </label>
                         </div>
                     </div>
                 </div>
             </div>
-
-
-            <div class="selection-box__part">
-                <p class="selection-box__part-name">
+            <div class="selection-box">
+                <p class="selection-box__title">
                     Chat list item (selected)
                 </p>
                 <div class="selection-box__item-area">
-                    <div class="chat-list__item chat-list-item chat-list-item--selected">
-                        <div class="chat-list-item__userpic-wrapper">
-                            <div class="chat-list-item__userpic chat-list-item__userpic--pic-1"></div>
-                        </div>
-                        <div class="chat-list-item__text-wrapper">
-                            <div class="chat-list-item__header">
-                                <div class="chat-list-item__author">
-                                    Tommy Vercetti
-                                </div>
-                                <div class="chat-list-item__delivery-status">
-                                    <i class="icon fas fa-check"></i>
-                                </div>
-                                <div class="chat-list-item__delivery-date">
-                                    21:05
-                                </div>
+                    <div class="selection-box__chat-list-item">
+                        <div class="chat-list__item chat-list-item chat-list-item--selected">
+                            <div class="chat-list-item__userpic-wrapper">
+                                <div class="chat-list-item__userpic chat-list-item__userpic--pic-1"></div>
                             </div>
-                            <div class="chat-list-item__footer">
-                                <div class="chat-list-item__last-msg">
-                                    <div class="chat-list-item__last-msg-type">
-                                        You:
+                            <div class="chat-list-item__text-wrapper">
+                                <div class="chat-list-item__header">
+                                    <div class="chat-list-item__author">
+                                        Tommy Vercetti
                                     </div>
-                                    Gonna take some time to do the things we never had
+                                    <div class="chat-list-item__delivery-status">
+                                        <i class="icon fas fa-check"></i>
+                                    </div>
+                                    <div class="chat-list-item__delivery-date">
+                                        21:05
+                                    </div>
                                 </div>
-                                <div class="chat-list-item__notifications-wrapper">
-                                    <i data-feather="star" class="icon"></i>
+                                <div class="chat-list-item__footer">
+                                    <div class="chat-list-item__last-msg">
+                                        <div class="chat-list-item__last-msg-type">
+                                            You:
+                                        </div>
+                                        Gonna take some time to do the things we never had
+                                    </div>
+                                    <div class="chat-list-item__notifications-wrapper">
+                                        <i data-feather="star" class="icon"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="selection-box__pickers-area">
-                    <div class="selection-box__column">
+                    <div class="selection-box__pickers-column">
                         <div class="selection-box__color-picker-wrapper">
                             <label>
-                                $dialogsBgActive:
                                 <input class="picker-item" type="color" id="$dialogsBgActive">
+                                $dialogsBgActive:
                             </label>
                         </div>
                         <div class="selection-box__color-picker-wrapper">
                             <label>
-                                $dialogsRippleBgActive:
                                 <input class="picker-item" type="color" id="$dialogsRippleBgActive">
+                                $dialogsRippleBgActive:
                             </label>
                         </div>
                         <div class="selection-box__color-picker-wrapper">
                             <label>
-                                $dialogsNameFgActive:
                                 <input class="picker-item" type="color" id="$dialogsNameFgActive">
+                                $dialogsNameFgActive:
                             </label>
                         </div>
                         <div class="selection-box__color-picker-wrapper">
                             <label>
-                                $dialogsChatIconFgActive:
                                 <input class="picker-item" type="color" id="$dialogsChatIconFgActive">
+                                $dialogsChatIconFgActive:
                             </label>
                         </div>
                         <div class="selection-box__color-picker-wrapper">
                             <label>
-                                dialogsDateFgActive background:
                                 <input class="picker-item" type="color" id="$dialogsDateFgActive">
+                                dialogsDateFgActive background:
                             </label>
                         </div>
                         <div class="selection-box__color-picker-wrapper">
                             <label>
-                                dialogsTextFgActive background:
                                 <input class="picker-item" type="color" id="$dialogsTextFgActive">
+                                dialogsTextFgActive background:
                             </label>
                         </div>
                     </div>
-                    <div class="selection-box__column">
+                    <div class="selection-box__pickers-column">
                         <div class="selection-box__color-picker-wrapper">
                             <label>
-                                dialogsUnreadFgActive background:
                                 <input class="picker-item" type="color" id="$dialogsUnreadFgActive">
+                                dialogsUnreadFgActive background:
                             </label>
                         </div>
                         <div class="selection-box__color-picker-wrapper">
                             <label>
-                                dialogsUnreadBgActive:
                                 <input class="picker-item" type="color" id="$dialogsUnreadBgActive">
+                                dialogsUnreadBgActive:
                             </label>
                         </div>
                         <div class="selection-box__color-picker-wrapper">
                             <label>
-                                dialogsUnreadBgMutedActive:
                                 <input class="picker-item" type="color" id="$dialogsUnreadBgMutedActive">
+                                dialogsUnreadBgMutedActive:
                             </label>
                         </div>
                         <div class="selection-box__color-picker-wrapper">
                             <label>
-                                dialogsTextFgServiceActive background:
                                 <input class="picker-item" type="color" id="$dialogsTextFgServiceActive">
+                                dialogsTextFgServiceActive background:
                             </label>
                         </div>
                         <div class="selection-box__color-picker-wrapper">
                             <label>
-                                dialogsSentIconFgActive background:
                                 <input class="picker-item" type="color" id="$dialogsSentIconFgActive">
+                                dialogsSentIconFgActive background:
                             </label>
                         </div>
                     </div>
@@ -2611,392 +2613,570 @@
             </div>
         </div>
 
-        <div class="selection-box">
-            <div class="selection-box__part">
-                <p class="selection-box__part-name">
-                    Sent message
-                </p>
-                <div class="selection-box__item-area">
-                    <div class="chat-msg chat-msg--out chat-msg">
-                        <div class="chat-msg__pointer chat-msg__pointer"></div>
-                        <div class="chat-msg__text">
-                            Gonna take some time to do the things we never had
-                        </div>
-                        <div class="chat-msg__info">
-                            <div class="chat-msg__date">
-                                20:18
-                            </div>
-                            <div class="chat-msg__status">
-                                <i class="icon fas fa-check"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="selection-box__pickers-area">
-                    <div class="selection-box__column">
-                        <div class="selection-box__color-picker-wrapper">
-                            <label>
-                                $dialogsBgActive:
-                                <input class="picker-item" type="color" id="$dialogsBgActive">
-                            </label>
-                        </div>
-                        <div class="selection-box__color-picker-wrapper">
-                            <label>
-                                $dialogsRippleBgActive:
-                                <input class="picker-item" type="color" id="$dialogsRippleBgActive">
-                            </label>
-                        </div>
-                        <div class="selection-box__color-picker-wrapper">
-                            <label>
-                                $dialogsNameFgActive:
-                                <input class="picker-item" type="color" id="$dialogsNameFgActive">
-                            </label>
-                        </div>
-                        <div class="selection-box__color-picker-wrapper">
-                            <label>
-                                $dialogsChatIconFgActive:
-                                <input class="picker-item" type="color" id="$dialogsChatIconFgActive">
-                            </label>
-                        </div>
-                        <div class="selection-box__color-picker-wrapper">
-                            <label>
-                                dialogsDateFgActive background:
-                                <input class="picker-item" type="color" id="$dialogsDateFgActive">
-                            </label>
-                        </div>
-                        <div class="selection-box__color-picker-wrapper">
-                            <label>
-                                dialogsTextFgActive background:
-                                <input class="picker-item" type="color" id="$dialogsTextFgActive">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="selection-box__column">
-                        <div class="selection-box__color-picker-wrapper">
-                            <label>
-                                dialogsUnreadFgActive background:
-                                <input class="picker-item" type="color" id="$dialogsUnreadFgActive">
-                            </label>
-                        </div>
-                        <div class="selection-box__color-picker-wrapper">
-                            <label>
-                                dialogsUnreadBgActive:
-                                <input class="picker-item" type="color" id="$dialogsUnreadBgActive">
-                            </label>
-                        </div>
-                        <div class="selection-box__color-picker-wrapper">
-                            <label>
-                                dialogsUnreadBgMutedActive:
-                                <input class="picker-item" type="color" id="$dialogsUnreadBgMutedActive">
-                            </label>
-                        </div>
-                        <div class="selection-box__color-picker-wrapper">
-                            <label>
-                                dialogsTextFgServiceActive background:
-                                <input class="picker-item" type="color" id="$dialogsTextFgServiceActive">
-                            </label>
-                        </div>
-                        <div class="selection-box__color-picker-wrapper">
-                            <label>
-                                dialogsSentIconFgActive background:
-                                <input class="picker-item" type="color" id="$dialogsSentIconFgActive">
-                            </label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="selection-box__part">
-                <p class="selection-box__part-name">
-                    Sent message (selected)
-                </p>
-                <div class="selection-box__item-area">
-                    <div class="chat-msg chat-msg--out chat-msg--selected">
-                        <div class="chat-msg__pointer chat-msg__pointer--selected"></div>
-                        <div class="chat-msg__text">
-                            Gonna take some time to do the things we never had
-                        </div>
-                        <div class="chat-msg__info">
-                            <div class="chat-msg__date">
-                                20:18
-                            </div>
-                            <div class="chat-msg__status">
-                                <i class="icon fas fa-check"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="selection-box__pickers-area">
-                    <div class="selection-box__column">
-                        <div class="selection-box__color-picker-wrapper">
-                            <label>
-                                $dialogsBgActive:
-                                <input class="picker-item" type="color" id="$dialogsBgActive">
-                            </label>
-                        </div>
-                        <div class="selection-box__color-picker-wrapper">
-                            <label>
-                                $dialogsRippleBgActive:
-                                <input class="picker-item" type="color" id="$dialogsRippleBgActive">
-                            </label>
-                        </div>
-                        <div class="selection-box__color-picker-wrapper">
-                            <label>
-                                $dialogsNameFgActive:
-                                <input class="picker-item" type="color" id="$dialogsNameFgActive">
-                            </label>
-                        </div>
-                        <div class="selection-box__color-picker-wrapper">
-                            <label>
-                                $dialogsChatIconFgActive:
-                                <input class="picker-item" type="color" id="$dialogsChatIconFgActive">
-                            </label>
-                        </div>
-                        <div class="selection-box__color-picker-wrapper">
-                            <label>
-                                dialogsDateFgActive background:
-                                <input class="picker-item" type="color" id="$dialogsDateFgActive">
-                            </label>
-                        </div>
-                        <div class="selection-box__color-picker-wrapper">
-                            <label>
-                                dialogsTextFgActive background:
-                                <input class="picker-item" type="color" id="$dialogsTextFgActive">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="selection-box__column">
-                        <div class="selection-box__color-picker-wrapper">
-                            <label>
-                                dialogsUnreadFgActive background:
-                                <input class="picker-item" type="color" id="$dialogsUnreadFgActive">
-                            </label>
-                        </div>
-                        <div class="selection-box__color-picker-wrapper">
-                            <label>
-                                dialogsUnreadBgActive:
-                                <input class="picker-item" type="color" id="$dialogsUnreadBgActive">
-                            </label>
-                        </div>
-                        <div class="selection-box__color-picker-wrapper">
-                            <label>
-                                dialogsUnreadBgMutedActive:
-                                <input class="picker-item" type="color" id="$dialogsUnreadBgMutedActive">
-                            </label>
-                        </div>
-                        <div class="selection-box__color-picker-wrapper">
-                            <label>
-                                dialogsTextFgServiceActive background:
-                                <input class="picker-item" type="color" id="$dialogsTextFgServiceActive">
-                            </label>
-                        </div>
-                        <div class="selection-box__color-picker-wrapper">
-                            <label>
-                                dialogsSentIconFgActive background:
-                                <input class="picker-item" type="color" id="$dialogsSentIconFgActive">
-                            </label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="selection-box">
-            <div class="selection-box__part">
-                <p class="selection-box__part-name">
+        <div class="selection-row">
+            <div class="selection-box">
+                <p class="selection-box__title">
                     Received message
                 </p>
                 <div class="selection-box__item-area">
-                    <div class="chat-msg chat-msg--in chat-msg">
-                        <div class="chat-msg__pointer chat-msg__pointer"></div>
-                        <div class="chat-msg__text">
-                            Gonna take some time to do the things we never had
-                        </div>
-                        <div class="chat-msg__info">
-                            <div class="chat-msg__date">
-                                20:18
+                    <div class="selection-box__msg-row">
+                        <div class="selection-box__msg">
+                            <div class="chat-msg chat-msg--in chat-msg">
+                                <div class="chat-msg__pointer chat-msg__pointer"></div>
+                                <div class="chat-msg__text">
+                                    <div class="chat-msg__reply-wrapper">
+                                        <div class="chat-msg__reply-name">
+                                            Oleg
+                                        </div>
+                                        <div class="chat-msg__reply-text">
+                                            It's gonna take a lot to drag me away from you.
+                                            There's nothing that a hundred men or more could ever do.
+                                            I bless the rains down in Africa.
+                                            Gonna take some time to do the things we never had.
+                                        </div>
+                                    </div>
+                                    Gonna take some time to do the things we never had
+                                </div>
+                                <div class="chat-msg__info">
+                                    <div class="chat-msg__date">
+                                        20:18
+                                    </div>
+                                    <div class="chat-msg__status">
+                                        <i class="icon fas fa-check"></i>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="chat-msg__status">
-                                <i class="icon fas fa-check"></i>
+                        </div>
+                        <div class="selection-box__msg">
+                            <div class="chat-msg chat-msg--in chat-msg--selected">
+                                <div class="chat-msg__pointer chat-msg__pointer--selected"></div>
+                                <div class="chat-msg__text">
+                                    <div class="chat-msg__reply-wrapper">
+                                        <div class="chat-msg__reply-name">
+                                            Oleg
+                                        </div>
+                                        <div class="chat-msg__reply-text">
+                                            It's gonna take a lot to drag me away from you.
+                                            There's nothing that a hundred men or more could ever do.
+                                            I bless the rains down in Africa.
+                                            Gonna take some time to do the things we never had.
+                                        </div>
+                                    </div>
+                                    Gonna take some time to do the things we never had
+                                </div>
+                                <div class="chat-msg__info">
+                                    <div class="chat-msg__date">
+                                        20:18
+                                    </div>
+                                    <div class="chat-msg__status">
+                                        <i class="icon fas fa-check"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="selection-box__msg-row">
+                        <div class="selection-box__msg">
+                            <div class="chat-msg chat-msg--in chat-msg">
+                                <div class="chat-msg__pointer chat-msg__pointer"></div>
+                                <div class="chat-msg__text">
+                                    <div class="chat-msg__forwarded">
+                                        Forwarded from Olegus
+                                    </div>
+                                    <div class="chat-msg__voice-msg-wrapper">
+                                        <div class="chat-msg__voice-msg-play-btn">
+                                            <i class="fas fa-play"></i>
+                                        </div>
+                                        <div class="chat-msg__voice-msg-info">
+                                            <div class="chat-msg__voice-msg-visualisation">
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                            </div>
+                                            <div class="chat-msg__voice-msg-length">
+                                                00:14
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chat-msg__info">
+                                    <div class="chat-msg__date">
+                                        20:18
+                                    </div>
+                                    <div class="chat-msg__status">
+                                        <i class="icon fas fa-check"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="selection-box__msg">
+                            <div class="chat-msg chat-msg--in chat-msg">
+                                <div class="chat-msg__pointer chat-msg__pointer"></div>
+                                <div class="chat-msg__text">
+                                    <div class="chat-msg__forwarded">
+                                        Forwarded from Olegus
+                                    </div>
+                                    <div class="chat-msg__audio-file-wrapper">
+                                        <div class="chat-msg__audio-file-play-btn">
+                                            <i class="fas fa-play"></i>
+                                        </div>
+                                        <div class="chat-msg__audio-file-info">
+                                            <div class="chat-msg__audio-file-name">
+                                                Fileauthor - filename
+                                            </div>
+                                            <div class="chat-msg__audio-file-duration">
+                                                10:05
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chat-msg__info">
+                                    <div class="chat-msg__date">
+                                        20:18
+                                    </div>
+                                    <div class="chat-msg__status">
+                                        <i class="icon fas fa-check"></i>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="selection-box__pickers-area">
-                    <div class="selection-box__column">
+                    <div class="selection-box__pickers-column">
                         <div class="selection-box__color-picker-wrapper">
                             <label>
-                                $dialogsBgActive:
                                 <input class="picker-item" type="color" id="$dialogsBgActive">
+                                - picker picker
                             </label>
                         </div>
                         <div class="selection-box__color-picker-wrapper">
                             <label>
-                                $dialogsRippleBgActive:
                                 <input class="picker-item" type="color" id="$dialogsRippleBgActive">
+                                - picker picker
                             </label>
                         </div>
                         <div class="selection-box__color-picker-wrapper">
                             <label>
-                                $dialogsNameFgActive:
                                 <input class="picker-item" type="color" id="$dialogsNameFgActive">
+                                - picker picker
                             </label>
                         </div>
                         <div class="selection-box__color-picker-wrapper">
                             <label>
-                                $dialogsChatIconFgActive:
                                 <input class="picker-item" type="color" id="$dialogsChatIconFgActive">
+                                - picker picker
                             </label>
                         </div>
                         <div class="selection-box__color-picker-wrapper">
                             <label>
-                                dialogsDateFgActive background:
                                 <input class="picker-item" type="color" id="$dialogsDateFgActive">
+                                - picker picker
                             </label>
                         </div>
                         <div class="selection-box__color-picker-wrapper">
                             <label>
-                                dialogsTextFgActive background:
                                 <input class="picker-item" type="color" id="$dialogsTextFgActive">
+                                - picker picker
                             </label>
                         </div>
                     </div>
-                    <div class="selection-box__column">
+                    <div class="selection-box__pickers-column">
                         <div class="selection-box__color-picker-wrapper">
                             <label>
-                                dialogsUnreadFgActive background:
                                 <input class="picker-item" type="color" id="$dialogsUnreadFgActive">
+                                - picker picker
                             </label>
                         </div>
                         <div class="selection-box__color-picker-wrapper">
                             <label>
-                                dialogsUnreadBgActive:
                                 <input class="picker-item" type="color" id="$dialogsUnreadBgActive">
+                                - picker picker
                             </label>
                         </div>
                         <div class="selection-box__color-picker-wrapper">
                             <label>
-                                dialogsUnreadBgMutedActive:
                                 <input class="picker-item" type="color" id="$dialogsUnreadBgMutedActive">
+                                - picker picker
                             </label>
                         </div>
                         <div class="selection-box__color-picker-wrapper">
                             <label>
-                                dialogsTextFgServiceActive background:
                                 <input class="picker-item" type="color" id="$dialogsTextFgServiceActive">
+                                - picker picker
                             </label>
                         </div>
                         <div class="selection-box__color-picker-wrapper">
                             <label>
-                                dialogsSentIconFgActive background:
                                 <input class="picker-item" type="color" id="$dialogsSentIconFgActive">
+                                - picker picker
                             </label>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="selection-box__part">
-                <p class="selection-box__part-name">
-                    Received message (selected)
+            <div class="selection-box">
+                <p class="selection-box__title">
+                    Sent message
                 </p>
                 <div class="selection-box__item-area">
-                    <div class="chat-msg chat-msg--in chat-msg--selected">
-                        <div class="chat-msg__pointer chat-msg__pointer--selected"></div>
-                        <div class="chat-msg__text">
-                            Gonna take some time to do the things we never had
-                        </div>
-                        <div class="chat-msg__info">
-                            <div class="chat-msg__date">
-                                20:18
+                    <div class="selection-box__msg-row">
+                        <div class="selection-box__msg">
+                            <div class="chat-msg chat-msg--out chat-msg">
+                                <div class="chat-msg__pointer chat-msg__pointer"></div>
+                                <div class="chat-msg__text">
+                                    <div class="chat-msg__reply-wrapper">
+                                        <div class="chat-msg__reply-name">
+                                            Oleg
+                                        </div>
+                                        <div class="chat-msg__reply-text">
+                                            It's gonna take a lot to drag me away from you.
+                                            There's nothing that a hundred men or more could ever do.
+                                            I bless the rains down in Africa.
+                                            Gonna take some time to do the things we never had.
+                                        </div>
+                                    </div>
+                                    Gonna take some time to do the things we never had
+                                </div>
+                                <div class="chat-msg__info">
+                                    <div class="chat-msg__date">
+                                        20:18
+                                    </div>
+                                    <div class="chat-msg__status">
+                                        <i class="icon fas fa-check"></i>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="chat-msg__status">
-                                <i class="icon fas fa-check"></i>
+                        </div>
+                        <div class="selection-box__msg">
+                            <div class="chat-msg chat-msg--out chat-msg--selected">
+                                <div class="chat-msg__pointer chat-msg__pointer--selected"></div>
+                                <div class="chat-msg__text">
+                                    <div class="chat-msg__reply-wrapper">
+                                        <div class="chat-msg__reply-name">
+                                            Oleg
+                                        </div>
+                                        <div class="chat-msg__reply-text">
+                                            It's gonna take a lot to drag me away from you.
+                                            There's nothing that a hundred men or more could ever do.
+                                            I bless the rains down in Africa.
+                                            Gonna take some time to do the things we never had.
+                                        </div>
+                                    </div>
+                                    Gonna take some time to do the things we never had
+                                </div>
+                                <div class="chat-msg__info">
+                                    <div class="chat-msg__date">
+                                        20:18
+                                    </div>
+                                    <div class="chat-msg__status">
+                                        <i class="icon fas fa-check"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="selection-box__msg-row">
+                        <div class="selection-box__msg">
+                            <div class="chat-msg chat-msg--out chat-msg">
+                                <div class="chat-msg__pointer chat-msg__pointer"></div>
+                                <div class="chat-msg__text">
+                                    <div class="chat-msg__forwarded">
+                                        Forwarded from Olegus
+                                    </div>
+                                    <div class="chat-msg__voice-msg-wrapper">
+                                        <div class="chat-msg__voice-msg-play-btn">
+                                            <i class="fas fa-play"></i>
+                                        </div>
+                                        <div class="chat-msg__voice-msg-info">
+                                            <div class="chat-msg__voice-msg-visualisation">
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                                <div class="chat-msg__voice-msg-visual-part"></div>
+                                            </div>
+                                            <div class="chat-msg__voice-msg-length">
+                                                00:14
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chat-msg__info">
+                                    <div class="chat-msg__date">
+                                        20:18
+                                    </div>
+                                    <div class="chat-msg__status">
+                                        <i class="icon fas fa-check"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="selection-box__msg">
+                            <div class="chat-msg chat-msg--out chat-msg">
+                                <div class="chat-msg__pointer chat-msg__pointer"></div>
+                                <div class="chat-msg__text">
+                                    <div class="chat-msg__forwarded">
+                                        Forwarded from Olegus
+                                    </div>
+                                    <div class="chat-msg__audio-file-wrapper">
+                                        <div class="chat-msg__audio-file-play-btn">
+                                            <i class="fas fa-play"></i>
+                                        </div>
+                                        <div class="chat-msg__audio-file-info">
+                                            <div class="chat-msg__audio-file-name">
+                                                Fileauthor - filename
+                                            </div>
+                                            <div class="chat-msg__audio-file-duration">
+                                                10:05
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chat-msg__info">
+                                    <div class="chat-msg__date">
+                                        20:18
+                                    </div>
+                                    <div class="chat-msg__status">
+                                        <i class="icon fas fa-check"></i>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="selection-box__pickers-area">
-                    <div class="selection-box__column">
+                    <div class="selection-box__pickers-column">
                         <div class="selection-box__color-picker-wrapper">
                             <label>
-                                $dialogsBgActive:
                                 <input class="picker-item" type="color" id="$dialogsBgActive">
+                                - picker picker
                             </label>
                         </div>
                         <div class="selection-box__color-picker-wrapper">
                             <label>
-                                $dialogsRippleBgActive:
                                 <input class="picker-item" type="color" id="$dialogsRippleBgActive">
+                                - picker picker
                             </label>
                         </div>
                         <div class="selection-box__color-picker-wrapper">
                             <label>
-                                $dialogsNameFgActive:
                                 <input class="picker-item" type="color" id="$dialogsNameFgActive">
+                                - picker picker
                             </label>
                         </div>
                         <div class="selection-box__color-picker-wrapper">
                             <label>
-                                $dialogsChatIconFgActive:
                                 <input class="picker-item" type="color" id="$dialogsChatIconFgActive">
+                                - picker picker
                             </label>
                         </div>
                         <div class="selection-box__color-picker-wrapper">
                             <label>
-                                dialogsDateFgActive background:
                                 <input class="picker-item" type="color" id="$dialogsDateFgActive">
+                                - picker picker
                             </label>
                         </div>
                         <div class="selection-box__color-picker-wrapper">
                             <label>
-                                dialogsTextFgActive background:
                                 <input class="picker-item" type="color" id="$dialogsTextFgActive">
+                                - picker picker
                             </label>
                         </div>
                     </div>
-                    <div class="selection-box__column">
+                    <div class="selection-box__pickers-column">
                         <div class="selection-box__color-picker-wrapper">
                             <label>
-                                dialogsUnreadFgActive background:
                                 <input class="picker-item" type="color" id="$dialogsUnreadFgActive">
+                                - picker picker
                             </label>
                         </div>
                         <div class="selection-box__color-picker-wrapper">
                             <label>
-                                dialogsUnreadBgActive:
                                 <input class="picker-item" type="color" id="$dialogsUnreadBgActive">
+                                - picker picker
                             </label>
                         </div>
                         <div class="selection-box__color-picker-wrapper">
                             <label>
-                                dialogsUnreadBgMutedActive:
                                 <input class="picker-item" type="color" id="$dialogsUnreadBgMutedActive">
+                                - picker picker
                             </label>
                         </div>
                         <div class="selection-box__color-picker-wrapper">
                             <label>
-                                dialogsTextFgServiceActive background:
                                 <input class="picker-item" type="color" id="$dialogsTextFgServiceActive">
+                                - picker picker
                             </label>
                         </div>
                         <div class="selection-box__color-picker-wrapper">
                             <label>
-                                dialogsSentIconFgActive background:
                                 <input class="picker-item" type="color" id="$dialogsSentIconFgActive">
+                                - picker picker
                             </label>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
     </section>
 
     <script src="build/js/main-menu.min.js"></script>
     <script src="build/js/chat-list-item.min.js"></script>
     <script src="build/js/chat-msg.min.js"></script>
-    <script src="build/js/pickers.min.js"></script>
-
+    <script src="build/js/selectors-section.min.js"></script>
 </body>
 
 </html>
