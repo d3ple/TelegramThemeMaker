@@ -1,0 +1,58 @@
+.selection-row {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .selection-box {
+      display: flex;
+      flex-direction: column;
+      width: 760px;
+      margin: 0 10px 0 10px;
+      padding: 0 30px 20px 30px;
+      background-color: #f2f2f2;
+  
+    &__title {
+      margin-right: auto;
+      margin-left: auto;
+      font-weight: 600;
+    }
+  
+    &__selector-box {
+      margin: 0 auto 10px auto;
+    }
+  
+    &__pickers-area {
+      display: flex;
+      margin-top: 15px;
+      font-size: 15px;
+    }
+  
+    &__pickers-column {
+      width: 50%;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  
+    &__color-picker-wrapper {
+      margin-top: 12px;
+    }
+  
+    &__msg-row {
+      display: flex;
+      margin-bottom: 5px;
+    }
+  
+    &__msg {
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+  
+    &__chat-list-item {
+      width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }

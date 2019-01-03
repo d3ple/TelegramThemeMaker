@@ -11,8 +11,9 @@ html {
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Noto Sans', sans-serif;
 }
+
 
 $siteBg: #fd739c;
 
@@ -25,15 +26,15 @@ header {
     padding: 35px;
     text-align: center;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 45px;
     color: #ffffff;
   }
 
   .app-version {
     background: #ffffff;
     color: $siteBg;
-    font-size: 0.5em;
-    padding: 0 5px;
+    font-size: 0.4em;
+    padding: 1px 7px;
     border-radius: 10px;
     margin-left: -6px;
   }
@@ -42,66 +43,14 @@ header {
 .app-section {
   display: flex;
   justify-content: center;
-  font-size: 13px;
   padding-bottom: 80px; 
   background-color: $siteBg;
 }
 
-
-
-
-.selection-box {
-  margin: 10px auto;
-  display: flex;
-  justify-content: center;
-
-  &__part {
-    background-color: #f2f2f2;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-
-    width: 40%;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 10px;
-  }
-
-  &__color-picker-wrapper {
-    margin-top: 12px;
-  }
-
-  &__part-name {
-    margin-right: auto;
-    margin-left: auto;
-    font-weight: 600;
-  }
-
-  &__selector-box {
-    margin: 0 auto 10px auto;
-  }
-
-
-  &__item-area {
-    width: 550px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  &__pickers-area {
-    display: flex;
-    margin-top: 15px;
-  }
-
-  &__column {
-    width: 50%;
-    margin-left: 5px;
-    margin-right: 5px;
-  }
+.app-section, .selection-box__item-area {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
 }
-
-
-
 
 
 @import "color-palette";
@@ -117,3 +66,4 @@ header {
 @import "chat-msg";
 @import "sticker-msg";
 @import "chat-view-footer";
+@import "selectors-section";
